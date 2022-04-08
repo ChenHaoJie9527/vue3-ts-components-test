@@ -1,0 +1,21 @@
+{
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChenHaoJie9527/vue3-ts-components-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChenHaoJie9527/vue3-ts-components-test/issues"
+  },
+  "homepage": "https://github.com/ChenHaoJie9527/vue3-ts-components-test#readme",
+  "devDependencies": {
+    "typescript": "^4.6.3",
+    "vue": "^3.2.31"
+  }
+}
