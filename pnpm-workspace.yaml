@@ -1,0 +1,4 @@
+# 该文件用于配置 monoreport 项目结构，是开启的文件
+packges:
+  - "packges/**" # 存放编写的组件
+  - paly
