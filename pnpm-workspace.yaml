@@ -1,5 +1,5 @@
 # 该文件用于配置 monoreport 项目结构，是开启的文件
 packages:
   - "packages/**" # 存放编写的组件
-  - "paly"
+  - play
   - "plop" # 存放 plop 相关文件

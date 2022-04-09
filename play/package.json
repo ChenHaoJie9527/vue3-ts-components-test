@@ -1,5 +1,5 @@
 {
-  "name": "@tg-ui/paly",
+  "name": "@tg-ui/play",
   "private": true,
   "scripts": {
     "dev": "vite"
