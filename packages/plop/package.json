@@ -1,0 +1,12 @@
+{
+  "name": "@tg-ui/plop-templates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "plops": "plop"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

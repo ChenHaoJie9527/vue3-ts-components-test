@@ -17,5 +17,10 @@
   "devDependencies": {
     "typescript": "^4.6.3",
     "vue": "^3.2.31"
+  },
+  "dependencies": {
+    "@tg-ui/components": "workspace:^1.0.0",
+    "@tg-ui/theme-chalk": "workspace:^1.0.0",
+    "@tg-ui/utils": "workspace:^1.0.0"
   }
 }
