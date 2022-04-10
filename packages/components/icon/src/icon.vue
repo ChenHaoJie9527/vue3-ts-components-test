@@ -4,7 +4,7 @@
   </i>
 </template>
 
-<script lang="ts">
+<!-- <script lang="ts">
 import { computed, defineComponent } from 'vue';
 import { iconProps } from './icon';
 
@@ -17,32 +17,30 @@ export default defineComponent({
         return {};
       }
       return {
-        ...(props.size ? { 'font-size': props.size + 'px' } : {}),
+        ...(props.size ? { 'font-size': `${props.size}px` } : {}),
         ...(props.color ? { color: props.color } : {}),
       };
     });
     return { style };
   },
 });
-</script>
+</script> -->
 
-<!-- <script setup lang="ts" name="TgIcon">
-import { computed, defineComponent } from "vue";
-import { iconProps } from "./icon";
-defineComponent({
-    name: "TgIcon"
-})
+<script setup lang="ts">
+import { computed } from 'vue';
+import { iconProps } from './icon';
+defineOptions({
+  name: 'TgIcon',
+});
 const props = defineProps(iconProps);
 const style = computed(() => {
-    if (props.size && props.color) {
-        return {
-            fontSize: props.size,
-            color: props.color
-        }
-    } else {
-        return {
-
-        }
-    }
-})
-</script> -->
+  if (props.size && props.color) {
+    return {
+      fontSize: props.size,
+      color: props.color,
+    };
+  } else {
+    return {};
+  }
+});
+</script>

@@ -13,20 +13,13 @@ module.exports = defineConfig({
   parser: 'vue-eslint-parser',
   // 继承eslint推荐的规则集，vue基本的规则集，typescript的规则集
   extends: [
-    // 'eslint:recommended',
-    // 'plugin:vue/vue3-recommended',
-    // 'plugin:@typescript-eslint/recommended',
-    // 'standard',
-    // 'plugin:prettier/recommended', // 新增，必须放在最后面
-    // 'prettier',
     'eslint:recommended',
-    'plugin:import/recommended',
     'plugin:eslint-comments/recommended',
-    'plugin:jsonc/recommended-with-jsonc',
-    'plugin:markdown/recommended',
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
     'prettier',
+    './.eslintrc-auto-import.json',
   ],
   // 支持ts的最新语法
   parserOptions: {
@@ -95,6 +88,7 @@ module.exports = defineConfig({
       'error',
       { disallowTypeAnnotations: false },
     ],
+    '@typescript-eslint/no-var-requires': 'off',
 
     // vue
     'vue/no-v-html': 'off',
@@ -116,11 +110,11 @@ module.exports = defineConfig({
     // prettier
     'prettier/prettier': 'error',
     // import
-    'import/first': 'error',
-    'import/no-duplicates': 'error',
-    'import/no-unresolved': 'off',
-    'import/namespace': 'off',
-    'import/default': 'off',
+    // 'import/first': 'error',
+    // 'import/no-duplicates': 'error',
+    // 'import/no-unresolved': 'off',
+    // 'import/namespace': 'off',
+    // 'import/default': 'off',
     'import/no-named-as-default': 'off',
     'import/no-named-as-default-member': 'off',
     'import/named': 'off',
