@@ -108,7 +108,7 @@ module.exports = defineConfig({
       },
     ],
     // prettier
-    'prettier/prettier': 'error',
+    'prettier/prettier': 'off',
     // import
     // 'import/first': 'error',
     // 'import/no-duplicates': 'error',

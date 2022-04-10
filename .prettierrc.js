@@ -7,9 +7,9 @@ module.exports = {
   singleQuote: true, //使用单引号
   overrides: [
     {
-      files: ".prettierrc",
+      files: '.prettierrc',
       options: {
-        parser: "json",
+        parser: 'json',
       },
     },
   ],
