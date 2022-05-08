@@ -2,7 +2,9 @@ import { defineConfig } from 'vite';
 import Vue from '@vitejs/plugin-vue';
 import AutoComponentImport from 'unplugin-auto-import/vite';
 import DefineOptions from 'unplugin-vue-define-options/vite';
+import path from "path";
 export default defineConfig({
+  root: path.resolve(__dirname, "src"),
   plugins: [
     Vue({
       template: {
@@ -19,7 +21,7 @@ export default defineConfig({
       imports: [
         'vue',
         {
-          '[package-name]': ['[import_names]', ['[from]', '[alias]']],
+          '[package_name]': ['[import_names]', ['[from]', '[alias]']],
         },
       ],
       dts: '../typings/auto-imports.d.ts',

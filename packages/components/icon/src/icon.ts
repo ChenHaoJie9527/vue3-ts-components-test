@@ -9,10 +9,6 @@ export const iconProps = {
   },
 };
 
-export type IconProps = ExtractPropTypes<typeof iconProps>;
-/**
- * type IconProps = {} & {
-    readonly size?: number | undefined;
-    readonly color?: string | undefined;
-}
- */
+type IsIconProps = ExtractPropTypes<typeof iconProps>;
+
+export type IconProps = IsIconProps;
